@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Nayan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         * {
@@ -14,10 +17,39 @@
             font-family: Poppins, sans-serif;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #252734;
+        }
+
+        .p-60 {
+            padding: 60px;
+
+        }
+
+        .pt-60 {
+            padding-top: 60px;
+        }
+
+        .pl-100 {
+            padding-left: 100px;
+        }
+
+        .pl-50 {
+            padding-left: 50px;
+        }
+
         /* Background color */
 
         .bg-light-blue {
             background-color: #252734;
+        }
+
+        .h-100per {
+            height: 100%;
         }
 
         /* Grid Structure */
@@ -75,6 +107,18 @@
             display: flex;
         }
 
+        .d-flex-j-center {
+            justify-content: center;
+        }
+
+        .j-space-around {
+            justify-content: space-around;
+        }
+
+        .align-center {
+            align-items: center;
+        }
+
         li {
             list-style: none;
         }
@@ -86,6 +130,42 @@
         img {
             height: 100%;
             width: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .h-100 {
+            height: 100vh;
+        }
+
+        .h-50vh {
+            height: 50vh;
+        }
+
+        .title {
+            letter-spacing: 0;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+        }
+
+        .big_title {
+            font-size: 90px;
+            color: #fff;
+        }
+
+        .heading-3 {
+            font-size: 40px;
+            color: #fff;
+        }
+
+        .h5-title {
+            font-size: 28px;
+            font-family: Poppins, sans-serif;
+            font-weight: 500;
+            margin: 45px;
+            color: white;
         }
 
         .para-default {
@@ -93,6 +173,34 @@
             color: #798792;
             line-height: 120px;
             font-weight: 400;
+
+        }
+
+        .bar-intro {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .card-des {
+            position: relative;
+            margin-bottom: 15px;
+            display: block;
+            padding-left: 20px;
+            color: white;
+        }
+
+        .key-para {
+            padding: 0px 20px;
+            line-height: 20px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .key-des {
+            color: #798792;
+            font-size: 18px;
+            margin-top: 19px;
 
         }
 
@@ -115,29 +223,130 @@
             justify-content: space-around;
         }
 
-        nav .center-nav ul li{
-            padding:0 20px;
+        nav .center-nav ul li {
+            padding: 0 20px;
         }
 
-        nav .center-nav ul li:hover a{
-            color:white;
+        nav .center-nav ul li:hover a {
+            color: white;
         }
 
-        nav .right-nav a{
+        nav .right-nav a {
             color: white;
             padding: 20px 30px;
             border: 1px solid #2e303d;
-            border-radius:0px 30px;
+            border-radius: 0px 30px;
         }
 
-        nav .right-nav a:hover{
-            background-color: #2e303d;
+        nav .right-nav a:hover {
+            background-color: hsl(232, 14%, 21%);
+        }
+
+        /* Hero Banner section */
+
+        .hero-section .hero-wrapper {
+            padding: 100px 50px;
+            background: #2A2C39;
+        }
+
+        .hero-section .hero-wrapper .hero-banner {
+            height: 300px;
+            width: 300px;
+
+        }
+
+        .hero-section .hero-wrapper .hero-banner img {
+            border-radius: 150px;
+            border: 2px solid #798792;
+        }
+
+        /* Card Section */
+
+        .card-main .card-wrapper .card-content {
+            background: #2A2C39;
+            height: 400px;
+            width: 300px;
+            padding: 20px;
+        }
+
+        .card-main .card-wrapper .card-content .card-logo {
+            width: 56px;
+            height: 56px;
+            margin: auto;
+        }
+
+        /* Feature with bar */
+
+        .feature-with-bar .feature-with-bar-wrapper {
+            margin: 100px 0;
+        }
+
+        .feature-with-bar .feature-with-bar-wrapper .feature-title h3 {
+            font-size: 70px;
+        }
+
+
+        .feature-with-bar .feature-with-bar-wrapper .bar-desc {
+            padding: 50px;
+            background: #2A2C39;
+            height: 100px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .feature-with-bar .feature-with-bar-wrapper .bar-desc .outer-bar {
+            width: 100%;
+            border: 2px solid #798792;
+            border-radius: 20px;
+
+        }
+
+        .feature-with-bar .feature-with-bar-wrapper .bar-desc .outer-bar .inner-bar-70 {
+            width: 70%;
+            border: 2px solid white;
+        }
+
+        .feature-with-bar .feature-with-bar-wrapper .bar-desc .outer-bar .inner-bar-60 {
+            width: 60%;
+            border: 2px solid white;
+        }
+
+
+        .feature-with-bar .feature-with-bar-wrapper .bar-desc .outer-bar .inner-bar-80 {
+            width: 80%;
+            border: 2px solid white;
+        }
+
+
+        .feature-with-bar .feature-with-bar-wrapper .bar-desc .outer-bar .inner-bar-90 {
+            width: 90%;
+            border: 2px solid white;
+        }
+
+        /* Keyfact section */
+
+        .keyfact-section {
+            background: #2A2C39;
+        }
+
+        .keyfact-section .keyfact-wrapper .key-img {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #798792;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .keyfact-section .keyfact-wrapper .key-img img {
+            width: 25px;
+            height: 26px;
+            margin: 11px;
         }
     </style>
 </head>
 
 <body>
-
+    <!-- Navigation Section -->
     <nav class="d-flex bg-light-blue">
         <div class="left-nav">
             <img src="./images/logos/logo.png" alt="logo">
@@ -156,6 +365,198 @@
         </div>
     </nav>
 
+
+    <!-- Hero Banner Section -->
+    <section class="hero-section h-100">
+        <div class="hero-wrapper d-flex">
+            <div class="col-8">
+                <h2 class="big_title">Hello! I’m</h2>
+                <h3 class="big_title">Nayan Machhi</h3>
+
+                <p class="para-default">UI/UX Designer specializing in Shopify & Webflow.</p>
+            </div>
+
+            <div class="col-4">
+                <div class="hero-banner">
+                    <img src="./images/portfolio-images/hero-banner.png" alt="banner">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--  3 Card Section -->
+
+
+    <section class="card-main h-100">
+        <div class="card-heading pl-50">
+            <p class="para-default">|| My Services</p>
+            <h3 class="heading-3">Service Provide For My Clients.</h3>
+        </div>
+
+
+        <div class="card-wrapper d-flex j-space-around pt-60">
+            <div class="col-3">
+                <div class="card-content">
+                    <div class="card-logo">
+                        <img src="./images/portfolio-images/card-images/service-icon.webp" alt="service-icon">
+                    </div>
+                    <h4 class="h5-title">
+                        UI/UX Design
+                    </h4>
+                    <div class="card-des">
+                        <ul>
+                            <li class="card-des">Landing Pages</li>
+                            <li class="card-des">User Flow</li>
+                            <li class="card-des">Wireframing</li>
+                            <li class="card-des">Prototyping</li>
+                            <li class="card-des">Mobile App Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card-content">
+                    <div class="card-logo">
+                        <img src="./images/portfolio-images/card-images/service-icon-1.webp" alt="service-icon">
+                    </div>
+                    <h4 class="h5-title">
+                        Development
+                    </h4>
+                    <div class="card-des">
+                        <ul>
+                            <li class="card-des">Landing Pages</li>
+                            <li class="card-des">User Flow</li>
+                            <li class="card-des">Wireframing</li>
+                            <li class="card-des">Prototyping</li>
+                            <li class="card-des">Mobile App Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card-content">
+                    <div class="card-logo">
+                        <img src="./images/portfolio-images/card-images/service-icon-2.webp" alt="service-icon">
+                    </div>
+                    <h4 class="h5-title">
+                        Illustration
+                    </h4>
+                    <div class="card-des">
+                        <ul>
+                            <li class="card-des">Landing Pages</li>
+                            <li class="card-des">User Flow</li>
+                            <li class="card-des">Wireframing</li>
+                            <li class="card-des">Prototyping</li>
+                            <li class="card-des">Mobile App Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Skill section -->
+
+    <section class="feature-with-bar h-100">
+
+        <div class="feature-with-bar-wrapper d-flex">
+            <div class="col-6">
+                <div class="feature-title pl-50">
+                    <p class="para-default">|| Special Skills</p>
+
+                    <h3 class="heading-3"> My Special Skill Field Here.</h3>
+
+                </div>
+
+            </div>
+            <div class="col-6">
+                <div class="p-60">
+                    <div class="bar-desc">
+                        <p class="bar-intro">Communication</p>
+                        <div class="outer-bar">
+                            <div class="inner-bar-70">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="bar-desc">
+                        <p class="bar-intro">Leadership</p>
+                        <div class="outer-bar">
+                            <div class="inner-bar-80">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="bar-desc">
+                        <p class="bar-intro">Teamwork</p>
+                        <div class="outer-bar">
+                            <div class="inner-bar-90">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="bar-desc">
+                        <p class="bar-intro">Flexibility</p>
+                        <div class="outer-bar">
+                            <div class="inner-bar-60">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Key Fact section -->
+
+    <section class="keyfact-section h-50vh">
+        <div class="keyfact-wrapper d-flex d-flex-j-center align-center h-100per">
+
+            <div class="col-3 d-flex">
+                <div class="key-img">
+                    <img src="./images/portfolio-images/card-images/counterup-icon-1.webp" alt="counter">
+                </div>
+                <div class="key-des">
+                    <p class="key-para">258k</p>
+                    <p class="key-des">Happy Clients</p>
+                </div>
+            </div>
+            <div class="col-3 d-flex">
+                <div class="key-img">
+                    <img src="./images/portfolio-images/card-images/counterup-icon-2.webp" alt="counter1">
+                </div>
+                <div class="key-des">
+                    <p class="key-para">300+</p>
+                    <p class="key-des">Project Complete</p>
+                </div>
+            </div>
+            <div class="col-3 d-flex">
+                <div class="key-img">
+                    <img src="./images/portfolio-images/card-images/counterup-icon-3.webp" alt="counter2">
+                </div>
+                <div class="key-des">
+                    <p class="key-para">25+</p>
+                    <p class="key-des">Years of Experience</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
 </body>
 
 </html>
