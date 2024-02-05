@@ -204,13 +204,26 @@
 
         }
 
+        .imag-para {
+            color: #798792;
+            font-size: 18px;
+            margin-top: 19px;
+
+        }
+
+        .image-title {
+            font-size: 25px;
+            color: white;
+            margin-top: 19px;
+        }
+
         /* Navigation Section */
         nav {
             justify-content: space-around;
             align-items: center;
             position: sticky;
-            top:0;
-            z-index:999;
+            top: 0;
+            z-index: 999;
 
         }
 
@@ -344,6 +357,22 @@
             width: 25px;
             height: 26px;
             margin: 11px;
+        }
+
+        /* Image with text */
+        .image-with-text .image-with-text-wrapper {
+            padding: 50px;
+        }
+
+        .image-with-text .image-with-text-wrapper .image-back {
+            background: #2e303d;
+            height: 500px;
+            margin: 20px;
+        }
+
+        .image-with-text .image-with-text-wrapper .image-back .image-text {
+            padding: 80px;
+
         }
     </style>
 </head>
@@ -562,7 +591,39 @@
 
     <!-- Image with text -->
 
-    <section class="image-with-text"></section>
+    <section class="image-with-text h-100">
+        <div class="feature-title pl-50">
+            <p class="para-default">|| Awesome Portfolio</p>
+
+            <h3 class="heading-3"> My Complete Projects</h3>
+
+        </div>
+        <div class="image-with-text-wrapper d-flex">
+            <div class="col-6">
+                <div class="image-back">
+                    <div class="image-text">
+                        <img src="https://fastly.picsum.photos/id/2/5000/3333.jpg?hmac=_KDkqQVttXw_nM-RyJfLImIbafFrqLsuGO5YuHqD-qQ"
+                            alt="">
+                        <h3 class="image-title">Givest - Non Profit PSD Template</h3>
+                        <p class="imag-para">Chairty Fund Rising Non Profit</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="image-back">
+                    <div class="image-text">
+                        <img src="https://fastly.picsum.photos/id/6/5000/3333.jpg?hmac=pq9FRpg2xkAQ7J9JTrBtyFcp9-qvlu8ycAi7bUHlL7I"
+                            alt="">
+                        <h3 class="image-title">Musion - Gardening Website Template</h3>
+                        <p class="imag-para">Gardeining / Landscaping / Greem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
