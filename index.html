@@ -106,6 +106,11 @@
             width: 8.33%;
         }
 
+
+        .txt-center {
+            text-align: center;
+        }
+
         /* Common Classes */
         .d-flex {
             display: flex;
@@ -206,6 +211,18 @@
             font-size: 18px;
             margin-top: 19px;
 
+        }
+
+        .blog-para {
+            color: #798792;
+            font-size: 14px;
+
+        }
+
+
+        .blog-des {
+            color: white;
+            padding-right: 20px;
         }
 
         .imag-para {
@@ -408,6 +425,100 @@
 
         .quote-section .quote-section-wrapper .quote-title {
             padding-bottom: 24px;
+        }
+
+        /* Image key section */
+
+        .image-key-section .image-keywrapper {
+            padding: 40px;
+        }
+
+
+
+        .image-key-section .image-keywrapper .image-logo {
+            width: 222px;
+            height: 243px;
+            border: 1px solid #798792;
+        }
+
+        .image-key-section .image-keywrapper .image-logo img {
+            width: 140px;
+            height: 140px;
+            margin: 40px;
+        }
+
+        /* Blog section */
+
+        .custom-blog-section .blog {
+            padding-bottom: 60px;
+        }
+
+        .custom-blog-section .blog-back {
+            width: 80%;
+            margin: auto;
+            background: #282A37;
+            height: 250px;
+            margin-bottom: 20px;
+
+        }
+
+        .custom-blog-section .blog-back .blog-des-section img {
+            width: 300px;
+            height: 250px;
+            padding: 40px;
+        }
+
+        .custom-blog-section .desc {
+            display: -webkit-inline-box;
+            padding: 30px;
+        }
+
+        .custom-blog-section .blog-description {
+            padding-left: 30px;
+        }
+
+        .custom-blog-section .blog-btn {
+            padding: 30px;
+        }
+
+        .custom-blog-section .blog-btn a {
+            color: white;
+            padding: 20px 30px;
+            border: 1px solid #2e303d;
+            border-radius: 0px 30px;
+        }
+
+        .custom-blog-section .blog-btn a:hover {
+            background-color: hsl(232, 14%, 21%);
+        }
+
+        /* Latest update section */
+
+        .latest-update-section .latest-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .latest-update-section .latest-content input{
+            padding: 10px;
+            border-radius:10px;
+            background: white;
+            border: 1px solid #798792;
+            margin-right: 20px;
+        }
+
+        .latest-update-section .latest-content a {
+            color: white;
+            padding: 20px 30px;
+            border: 1px solid #2e303d;
+            border-radius: 0px 30px;
+        }
+
+
+
+        .latest-update-section .latest-content a:hover {
+            background-color: hsl(232, 14%, 21%);
         }
     </style>
 </head>
@@ -706,27 +817,133 @@
 
     <!-- Imaage logo section -->
 
-    <div class="image-key-section h-100 bg-lightgrey">
+    <div class="image-key-section bg-lightgrey">
         <div class="image-title pl-50">
             <p class="para-default">|| Favourite Clients</p>
 
             <h3 class="heading-3">Work With Trusted Comapny.</h3>
         </div>
+
+        <div class="image-keywrapper d-flex">
+            <div class="col-3">
+                <div class="image-logo">
+                    <img src="./images/portfolio-images/card-images/1.webp" alt="">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="image-logo">
+                    <img src="./images/portfolio-images/card-images/2.webp" alt="">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="image-logo">
+                    <img src="./images/portfolio-images/card-images/3.webp" alt="">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="image-logo">
+                    <img src="./images/portfolio-images/card-images/4.webp" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="iamge-keywrapper">
-        <div class="col-3">
 
-        </div>
-        <div class="col-3">
+    <!-- custom blog section  -->
 
+    <div class="custom-blog-section bg-lightgrey">
+        <div class="blog txt-center">
+            <p class="para-default">|| Blog Post</p>
+            <h3 class="heading-3">Latest Tips & Tricks</h3>
         </div>
-        <div class="col-3">
 
+        <div class="blog-back">
+            <div class="blog-des-section d-flex">
+                <div class="col-4">
+                    <img src="./images/portfolio-images/card-images/blog-feed-img-1.webp" alt="">
+                </div>
+                <div class="col-5">
+                    <div class="desc">
+                        <p class="blog-des">Business</p>
+                        <p class="blog-para">07 February, 2021</p>
+                    </div>
+                    <div class="blog-description">
+                        <h4 class="image-title">
+                            Don't wait until you officially started business to line these up.
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="blog-btn"><a class="para-default" href="#">Hire Me</a></div>
+
+                </div>
+            </div>
         </div>
-        <div class="col-3">
-            
+
+        <div class="blog-back">
+            <div class="blog-des-section d-flex">
+                <div class="col-4">
+                    <img src="./images/portfolio-images/card-images/blog-feed-img-2.webp" alt="">
+                </div>
+                <div class="col-5">
+                    <div class="desc">
+                        <p class="blog-des">Business</p>
+                        <p class="blog-para">07 February, 2021</p>
+                    </div>
+                    <div class="blog-description">
+                        <h4 class="image-title">
+                            Don't wait until you officially started business to line these up.
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="blog-btn"><a class="para-default" href="#">Hire Me</a></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-back">
+            <div class="blog-des-section d-flex">
+                <div class="col-4">
+                    <img src="./images/portfolio-images/card-images/blog-feed-img-3.webp" alt="">
+                </div>
+                <div class="col-5">
+                    <div class="desc">
+                        <p class="blog-des">Business</p>
+                        <p class="blog-para">07 February, 2021</p>
+                    </div>
+                    <div class="blog-description">
+                        <h4 class="image-title">
+                            Don't wait until you officially started business to line these up.
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="blog-btn"><a class="para-default" href="#">Hire Me</a></div>
+
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Latest update section -->
+
+
+    <section class="latest-update-section">
+        <div class="latest-section-wrapper txt-center">
+            <p class="para-default">|| Get Latest Updates</p>
+            <h3 class="heading-3">Subscribe For Newsletter</h3>
+        </div>
+
+        <div class="latest-content">
+            <input type="text" placeholder="demo@example.com">
+            <div class="blog-btn"><a class="para-default" href="#">Subscribe Now</a></div>
+        </div>
+
+    </section>
 </body>
 
 </html>
